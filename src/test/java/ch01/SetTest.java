@@ -24,7 +24,7 @@ public class SetTest {
   }
 
   @Test
-  @DisplayName("Set의 크기를 검증한다")
+  @DisplayName("Set의 크기를 확인한다")
   void size() {
     int size = numbers.size();
     assertThat(size).isEqualTo(3);
