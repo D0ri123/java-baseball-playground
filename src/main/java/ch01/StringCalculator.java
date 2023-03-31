@@ -1,4 +1,4 @@
-package study;
+package ch01;
 
 import java.util.Set;
 
@@ -6,7 +6,10 @@ public class StringCalculator {
   private final Set<String> operator = Set.of("+", "*", "-", "/");
 
   public int calculate(String[] values) {
-    if(!validateInput(values)) return Integer.MIN_VALUE;
+    if(!validateInput(values)) {
+      return Integer.MIN_VALUE;
+    }
+
     int result = Integer.parseInt(values[0]);
     for(int i=1; i<values.length; i=i+2) {
       switch(values[i]) {
