@@ -1,4 +1,4 @@
-package ch01;
+package stringcalculator;
 
 import java.util.Set;
 
